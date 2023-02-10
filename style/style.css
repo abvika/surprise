@@ -159,12 +159,12 @@
 
 @media (min-width: 1500px) and (max-width: 2000px) {
 	.virtual{
-	margin: 35px 10% 35px 25%;
+	margin: 35px 12% 35px 27%;
 }
 
 .virtual-grid{
 	display: grid;
-	grid-template-columns: 300px 300px 300px;
+	grid-template-columns: 270px 270px 270px;
 	grid-column-gap: 3.75em;
 	grid-row-gap: 2.7em;
 }
