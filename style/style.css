@@ -1,0 +1,177 @@
+*, a{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.container-black{
+	width: 100%;
+	background-color: #FFC0CB	;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.header-text{
+	display: block;
+	text-align: center;
+	padding: 30px 0 10px;
+	font-family: 'Prata', serif;
+	color: #FF1493;
+	font-size: 46px;
+	font-weight: 400;
+}
+
+.header-undertext{
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	font-family: 'Prata', serif;
+	color: #000;
+	font-size: 20px;
+	letter-spacing: .1em;
+}
+
+.hr-main{
+	display: block;
+	margin: 0 180px 0 180px;
+	height: 2px;
+	background-color: #710707;
+	border:none;
+}
+
+.virtual{
+	margin: 35px 165px;
+}
+
+.virtual-grid{
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	grid-column-gap: 1.75em;
+	grid-row-gap: 1.7em;
+}
+.virtual-grid>div{
+	padding: 5px;
+	border-radius: 15px;
+	height: 180px;
+	border: 1px solid #c0c0c0;
+	transition: .5s;
+}
+
+
+
+.orange{
+	background-image: url(../img/тусы1.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.orange a{
+	display: block; /* Ссылка как блочный элемент */
+     text-align: center; /* Выравнивание по центру */
+     height: 100%;
+}
+
+.orange:hover{
+	box-shadow:  0 0 20px #8B0000;
+	border: none;
+	background-image:none;
+	background-color: #fff;
+
+}
+
+/*.virtual-grid img{
+	display: block;
+	padding-top: 10px;
+	max-width: 80px;
+	margin: 0 auto;
+}*/
+.text-big{
+	display: none;
+	/*margin: 12px 0 5px;*/
+	text-align: center;
+	font-family: 'Prata', serif;
+	color: #8B0000;
+	font-size: 30px;
+	font-weight: 400;
+
+}
+
+.orange:hover .text-big{
+	display: block;
+	/*margin: 12px 0 5px;*/
+	text-align: center;
+	padding: 25% 0;
+	font-family: 'Prata', serif;
+	color: #000;
+	font-size: 30px;
+	font-weight: 400;
+
+}
+/*.text-big:hover, active{
+	font-size: 30px;
+	color: #8B0000;
+}*/
+
+.text-between{
+	display: block;
+	margin: 5px 0;
+	font-family: 'Prata', serif;
+	font-size: 16px;
+	font-weight: 100;
+	color: #000;
+}
+
+.text-small{
+	font-family: 'Prata', serif;
+	font-size: 14px;
+	font-weight: 100;
+	color: #000;
+}
+
+.hr-in-block{
+	width: 80%;
+	height: 2px;
+	background-color: #710707;
+	border:none;
+	transition: 1s;
+}
+
+.virtual-grid > div:hover .hr-in-block{
+	width: 100%;
+}
+
+.arrow{
+	display: flex;
+	margin-left: 85%;
+}
+.arrow img{
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-radius: 30px;
+}
+
+
+
+@media (min-width: 1500px) and (max-width: 2000px) {
+	.virtual{
+	margin: 35px 10% 35px 25%;
+}
+
+.virtual-grid{
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	grid-column-gap: 3.75em;
+	grid-row-gap: 2.7em;
+}
+.orange{
+	background-image: url(../img/тусы1.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+}
